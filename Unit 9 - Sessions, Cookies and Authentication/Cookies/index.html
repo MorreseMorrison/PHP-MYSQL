@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Contact Database Home</title>
+</head>
+
+<body>
+<p style="color: red">You are not currently logged in.  Enter your username and password to edit the database. </p>
+<form action="authcookie.php" method="post" name="loginform">
+  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" name="username" /></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password" /></td>
+    </tr>
+  </table>
+  <p>
+    <input type="hidden" name="login" value="login" />
+        <input type="submit" value="Log In"  />
+    </p>
+  </form>
+</body>
+</html>

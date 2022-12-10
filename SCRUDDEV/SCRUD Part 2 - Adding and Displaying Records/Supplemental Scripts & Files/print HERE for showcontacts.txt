@@ -1,0 +1,24 @@
+    print <<<HERE
+    <h2>My Contacts</h2>
+    Select a record to edit or delete or <a href="addsimple.php">add new contacts</a>.
+    <table id="home">
+HERE;
+
+
+
+        print <<<HERE
+        <tr>
+            <td>
+            <form method="post" action="confirmdelete.php">
+            <input type="hidden" name="sel_record" value="$id">
+            <input type="submit" name="delete" value=" Delete ">
+            </form>
+
+            <form method="post" action="updateform.php">
+            <input type="hidden" name="sel_record" value="$id">
+            <input type="submit" name="update" value=" Edit "></form>
+            </td>   
+            <td><strong>$first $last</strong><br />
+            Phone: $phone<br />
+            <a href="mailto: $email">$email</a></td></tr>
+HERE;

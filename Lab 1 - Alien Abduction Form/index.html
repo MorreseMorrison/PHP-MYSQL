@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alien Abduction Form</title>
+        <style>
+          /* The following CSS Lines up Each Text Box Question */
+          div {
+            margin-bottom: 10px;
+          }
+          label {
+            display: inline-block;
+            width: 200px;
+          }
+        </style>
+        </head>
+<body>
+
+<h2>Aliens Abducted Me - Report an Abduction</h2>
+
+<p>Share your story of alien abduction:<p>
+
+
+ <!--- Form Creation. PHP script Is In The Directory. PHP Script
+  Is Named "index.php"---> 
+  <form action="index.php"
+        method="post">
+  <label for="fname"><b>First name:</b></label>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+  <label for="lname"><b>Last name:</b></label>
+  <input type="text" id="lname" name="lname" value=""><br>
+
+  <label for="email"><b>What is your email address?</b></label>
+  <input type="text" id="email" name="email" value=""><br>
+
+  <label for="when"><b>When did it happen?</b></label>
+  <input type="text" id="when" name="when" value=""><br>
+
+  <label for="long"><b>How long were you gone?</b></label>
+  <input type="text" id="long" name="long" value=""><br>
+
+  <label for="how"><b>How many did you see?</b></label>
+  <input type="text" id="how" name="how" value=""><br>
+
+  <label for="description"><b>Describe them:</b></label>
+  <input type="text" id="description" name="description" value=""><br>
+
+  <label for="what"><b>What did they do to you?</b></label>
+  <input type="text" id="what" name="what" value=""><br>
+
+  <div class="col-75">
+  </div>
+
+  <p><b>Have you seen my dog Fluffly?</b></p>
+
+  <!--- Created Two Radio Buttons. Same name but different. This Way Both 
+  Radio Buttons can be selected. ---> 
+  <label>
+    <input type="radio" id="yes" name="confirmation" value="yes">Yes
+  </label>
+  <label>
+    <input type="radio" id="no" name="confirmation" value="no">No
+  </label>
+
+  <br>
+  <br>
+
+ <!--- Utilized Area Text Box. ---> 
+  <label for="add"><b>Anything else you want to add?</b></label>
+  <textarea id="add" name="add"  style="height:25px"></textarea>
+  <br>
+  <br>
+
+<img src="fluffy.jpg" alt="Fluffy">
+
+ <!--- Created Two Buttons. Button with name "submit" submits the form
+  Button with name "rese" clears the form completely.---> 
+  <input type="submit" name="submit" id="submit" value="Report Abduction">
+  <input type ="reset" name="reset" id="reset" value="Clear Form">
+</form> 
+
+
+</body>
+</html>
